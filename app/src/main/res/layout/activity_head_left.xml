@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="小灵Robot简介"
+    android:textSize="25sp"
+    android:textColor="@color/colorPrimary"/>
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_marginTop="5dp"
+       android:layout_gravity="center"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:src="@drawable/left"/>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1" >
+      <TextView
+          android:textSize="18sp"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="@string/introduce"/>
+
+   </ScrollView>
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="更多"
+       android:textSize="20sp"
+       android:background="@drawable/btn_color_selecoor"
+       android:id="@+id/btn_more_info"/>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+       <ImageButton
+           android:id="@+id/ib_back"
+           android:background="@drawable/back"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小灵Robot"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+    <ListView
+        android:transcriptMode="alwaysScroll"
+        android:dividerHeight="0dp"
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+    </ListView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="2"
+            android:id="@+id/btn_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:background="@drawable/btn_color_selecoor"/>
+
+    </LinearLayout>
+
+</LinearLayout>
